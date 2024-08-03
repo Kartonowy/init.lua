@@ -11,7 +11,7 @@ return {
 	{'L3MON4D3/LuaSnip'},
 	{'williamboman/mason.nvim'},
 	{'williamboman/mason-lspconfig.nvim'},
-	{'folke/tokyonight.nvim', lazy = false, priority = 1000, opts = {}},
+	{'catppuccin/nvim', name="catppuccin", lazy = false, priority = 1000, opts = {}},
 	{'eandrju/cellular-automaton.nvim'},
 	{'windwp/nvim-autopairs', event = "InsertEnter", opts = {}},
     {'numToStr/Comment.nvim', opts = {}, lazy = false},
