@@ -27,7 +27,10 @@ return {
                     filetypes = {'html', 'templ'}
                 },
                 tailwindcss = {},
-                clangd = {}
+                clangd = {},
+                ts_ls = {
+                    filetypes = {'html', 'typescriptreact', 'typescript', 'javascript', 'javascriptreact'}
+                }
             }
         },
         config = function(_, opts)
