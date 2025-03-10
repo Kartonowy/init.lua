@@ -18,7 +18,7 @@ return {
                 templ = {},
                 cssls = {},
                 html = {
-                    filetypes = {'html', 'templ'}
+                    filetypes = {'html', 'templ', 'vue'}
                 },
                 htmx = {
                     filetypes = {'html', 'templ'}
@@ -29,8 +29,24 @@ return {
                 tailwindcss = {},
                 clangd = {},
                 ts_ls = {
-                    filetypes = {'html', 'typescriptreact', 'typescript', 'javascript', 'javascriptreact'}
-                }
+                    filetypes = {'html', 'typescriptreact', 'typescript', 'javascript', 'javascriptreact', 'vue'},
+                    init_options = {
+                        plugins = {
+                            {
+                                name = "@vue/typescript-plugin",
+                                location = "/home/hacunae/.nvm/versions/node/v23.7.0/lib/node_modules/@vue/language-server",
+                                languages = { "vue" },
+                            },
+                        }
+                    }
+                },
+                volar = {
+                    filetypes = {'vue', 'typescript'}
+                },
+                pyright = {}
+                -- vuels = {
+                --     filetypes = {'vue', 'typescript'}
+                -- }
             }
         },
         config = function(_, opts)
