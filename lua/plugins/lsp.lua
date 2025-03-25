@@ -63,5 +63,6 @@ return {
             require("mason-lspconfig").setup()
         end
 
-    }
+    },
+'github/copilot.vim'
 }
