@@ -28,6 +28,7 @@ return {
                 },
                 tailwindcss = {},
                 clangd = {},
+                astro = {},
                 ts_ls = {
                     filetypes = {'html', 'typescriptreact', 'typescript', 'javascript', 'javascriptreact', 'vue'},
                     init_options = {
